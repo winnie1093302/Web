@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
     <style>
-        p.name{
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            top: 0px;
+            left: 0px;
+            width: 1920px;
+            height: 3006px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .name{
             top: 40px;
-            left: 360px;
-            width: 274px;
+            margin-left: 360px;
+            
+            width: 250px;
             height: 190px;
             text-align: left;
             font: normal normal normal 80px/95px SF Pro Text;
@@ -12,13 +25,180 @@
             color: #000000;
             opacity: 1;
         }
-        img.people{
+        .pic{
             top: 302px;
-            left: 360px;
+            margin-left: 360px;
+            margin-top: 50px;
             width: 324px;
             height: 324px;
-            background: transparent url('頭像.png') 0% 0% no-repeat padding-box;
+            /* background: transparent url('頭像.png') 0% 0% no-repeat padding-box; */
             opacity: 1;
+        }
+        .title1{
+            margin-left: 360px;
+            display: inline-block;
+        }
+        .title1 .p1{
+            top: 674px;
+            /* margin-left: 360px; */
+            /* width: 128px; */
+            height: 48px;
+            text-align: left;
+            font: normal normal medium 32px/48px PingFang TC;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            
+        }
+        .title1 .p2{
+            top: 680px;
+            /* margin-left: 504px; */
+            /* width: 101px; */
+            height: 36px;
+            text-align: left;
+            font: normal normal 600 24px/36px SF Pro Text;
+            letter-spacing: 0px;
+            color: #A00404;
+            opacity: 1;
+        }
+        .content1{
+            display: inline-block;
+            /* top: 746px; */
+            margin-left: 360px;
+            /* width: 439px; */
+            /* height: 108px; */
+            /* UI Properties */
+            text-align: left;
+            font: normal normal 300 24px/36px PingFang TC;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .school .title2{
+            margin-left: 360px;
+        }
+        .school .content2{
+            display: inline-block;
+            /* top: 1122px; */
+            margin-left: 360px;
+            /* width: 603px;
+            height: 36px; */
+            text-align: left;
+            font: normal normal 300 24px/36px PingFang TC;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .skill .title2 .cin{
+            top: 1298px;
+            margin-left: 882px;
+            width: 64px;
+            height: 48px;
+            text-align: left;
+            font: normal normal medium 32px/48px PingFang TC;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .skill .title2 .ein{
+            top: 1304px;
+            margin-right: 874px;
+            width: 84px;
+            height: 36px;
+            text-align: left;
+            font: normal normal 600 24px/36px SF Pro Text;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .skill .content{
+            margin-left: 876px;
+            width: 200px;
+            text-align: left;
+            font: normal normal 300 24px/36px SF Pro Text;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .exp .title4{
+            margin-left: 360px;
+        }
+        .exp .content4{
+            display: inline-block;
+            /* top: 1122px; */
+            margin-left: 408px;
+            /* width: 603px;
+            height: 36px; */
+            text-align: left;
+            font: normal normal 300 24px/36px PingFang TC;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .contact img{
+            top: 2918px;
+            /* left: 864px; */
+            width: 48px;
+            height: 48px;
+        }
+        /* .exp hr{
+            border: 1px solid #000000;
+            margin-bottom: 16px;
+            opacity: 1;
+        } */
+        .exp .content4 .line{
+            border-left: 1px solid #96A9C4;
+            width: 0px;
+            height: 840px;
+            position: absolute;
+            margin-left: -20px;
+        }
+        .skill .content .line{
+            border-left: 1px solid #96A9C4;
+            width: 0px;
+            height: 240px;
+            position: absolute;
+            margin-left: -20px;
+        }
+        .information p{
+            display: inline-block;
+        }
+        .information .cin{
+            top: 674px;
+            left: 360px;
+            width: 128px;
+            height: 48px;
+            text-align: left;
+            font: normal normal medium 32px/48px PingFang TC;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+        .information .ein{
+            text-align: left;
+            font: normal normal 600 24px/36px SF Pro Text;
+            letter-spacing: 0px;
+            color: #A00404;
+            opacity: 1;
+        }
+        
+        .information .content1{
+            
+            margin-left: 24px;
+        }
+        
+        
+        
+        .skill .title{
+            top: 1304px;
+        left: 962px;
+        width: 160px;
+        height: 36px;
+        text-align: left;
+        font: normal normal 600 24px/36px SF Pro Text;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
         }
     </style>
 <head>
@@ -27,37 +207,115 @@
     
 </head>
 <body>
-    <p class="name">Joanne<br>Chen</p>
+    <div class="name">Joanne<br>Chen</div>
     
-    <hr width=80%>
-    <img class="people" src="頭像.png">
-    <p>個人資料</p><p>PROFILE</p>
-    <hr width="80%">
-    <p>陳久安 Joanne Chen <br>1997- <br>應屆畢業生/接案設計師/UI設計實習生</p>
-    <br>
-    <p>UI設計修行中/立志當斜槓青年<br>獨立接案，內容涵蓋:<br>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</p>
-    <p>學歷</p><p>EDUCATION</p>
-    <hr>
-    <p>國立六角師範大學 視覺設計學系 學士學位|2016-2020<br>國立六腳高級中學 美術班|2013-2016</p>
-    <center><p>技能 SKILLS</p></center>
-    <hr>
-    <p>Adobe Photo<br>Adobe Illustrator<br>Adobe XD<br>Adobe Indesign<br>C4D<br>Adobe Premiere<br>語言:中文、英文</p>
-    <p>工作經驗</p><p style="color: RED;">WORK EXPERIENCE</p>
-    <p>六角學院 視覺設計實習生|2019/07-2020/06</p>
-    <img src="hexschool.png">
-    <p>在六角學院長達一年的實習中，前期藉由公司課程掌握 HTML, CSS,<br> Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活動，設<br>計各式周邊商品及活動網路宣傳圖。後期進入 UI 設計範疇，設計六角共<br>筆部落格 - W3HexSchool、六角發案服務網介面設計、供給學員的教<br>案- RWD官方網站設計，並設計各式網頁活動宣傳圖。</p>
-    <p style="font-style: bold;">獨立接案 Hao Jun 酒標設計 | 2019</p>
-    <p style="font-style: bold;">獨立接案 Exulans 酒標設計 | 2019</p>
-    <p style="font-style: bold;">獨立接案 桃園平鎮市民健走活動提案 | 2019</p>
-    <p style="font-style: bold;">Simtree 興趣咖啡 工讀生 | 2018-2019</p>
-    <img src="simtree.png">
-    <p>擔任外場及吧台服務生，學習咖啡相關知識。</p>
-    <center><p>聯絡方式 CONTACT METHOD</p>
-    <p>Mail:xxxd@hexschool.com</p>
-    <p>Phone:0910123456</p>
-    <p>Kaohsiung, Taiwan</p>
-    <p>作品連結:https://www.behance.net/xxxdddddd</p>
-    <img src="facebook@2x.png">
-    <img src="instagram-alt@2x.png">
-    <img src="line@2x.png"></center>
+    <hr style="top: 254px;
+    left: 360px;
+    width: 1200px;
+    height: 0px;
+    border: 2px solid #000000;
+    opacity: 1;">
+    <div class="pic"><img src="頭像.png"></div>
+    <div class="title1" style="display: inline-block;">
+        <p><h1 style="display: inline-block;">個人資料</h1><h2 style="display: inline-block;color: #A00404;">PROFILE</h2><p></p>
+    </div>
+        <hr style="
+        margin-top: -30px;
+        top: 230px;
+        left: 360px;
+        width: 1200px;
+        height: 0px;
+        border: 1px solid #000000;
+        opacity: 1;">
+        <div class="content1">
+            <p>陳久安 Joanne Chen <br>1997- <br>應屆畢業生/接案設計師/UI設計實習生</p>
+
+        <p>UI設計修行中/立志當斜槓青年<br>獨立接案，內容涵蓋:<br>品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</p>
+    </div>
+    <div class="school">
+        <div class="title2">
+            <p><h1 class="cin" style="display: inline-block;">學歷</h1><h2 class="ein" style="display: inline-block;color: #A00404;">EDUCATION</h2><p>
+        </div>
+        <hr style="
+        margin-top: -30px;
+        top: 230px;
+        left: 360px;
+        width: 1200px;
+        height: 0px;
+        border: 1px solid #000000;
+        opacity: 1;">
+        <div class="content2">
+            <p>國立六角師範大學 視覺設計學系 學士學位|2016-2020<br>國立六腳高級中學 美術班|2013-2016</p>
+        </div>
+    </div>
+    <div class="skill" style="background-color: #415165;  width: 2025px;">
+        <div class="title2">
+            <p class="cin" style="display: inline-block; color: #FFFFFF; font-size:xx-large;">技能 </p> <p class="cin" style="display: inline-block; color: #FFFFFF;font-size:x-large;">SKILLS</p>
+        </div>
+        <hr style="
+        margin-top: -30px;
+        top: 230px;
+        left: 360px;
+        width: 1200px;
+        height: 0px;
+        border: 0.5px solid #FFFFFF;
+        opacity: 1;">
+        <div class="content">
+        <p >
+            <hr class="line">
+        Adobe Photo<br>
+        Adobe Illustrator<br>
+        Adobe XD<br>
+        Adobe Indesign<br>
+        C4D<br>
+        Adobe Premiere<br>
+        語言:中文、英文</p>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="title4">
+            <p><h1 class="cin" style="display: inline-block;">工作經驗</h1><h2 class="ein" style="display: inline-block; color: #A00404;">WORK EXPERIENCE</h2><p>
+        </div>
+        <hr style="
+        margin-top: -30px;
+        top: 230px;
+        left: 360px;
+        width: 1200px;
+        height: 0px;
+        border: 1px solid #000000;
+        opacity: 1;">
+        
+        <div class="content4">
+            <hr class="line">
+        <p>六角學院 視覺設計實習生|2019/07-2020/06</p>
+        <img src="hexschool.png" style="width: 100px;height: 100px;">
+        <p>在六角學院長達一年的實習中，前期藉由公司課程掌握 HTML, CSS,<br> Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活動，設<br>計各式周邊商品及活動網路宣傳圖。後期進入 UI 設計範疇，設計六角共<br>筆部落格 - W3HexSchool、六角發案服務網介面設計、供給學員的教<br>案- RWD官方網站設計，並設計各式網頁活動宣傳圖。</p>
+        <p style="font-style: bold;">獨立接案 Hao Jun 酒標設計 | 2019</p>
+        <p style="font-style: bold;">獨立接案 Exulans 酒標設計 | 2019</p>
+        <p style="font-style: bold;">獨立接案 桃園平鎮市民健走活動提案 | 2019</p>
+        <p style="font-style: bold;">Simtree 興趣咖啡 工讀生 | 2018-2019</p>
+        <img src="simtree.png">
+        <p>擔任外場及吧台服務生，學習咖啡相關知識。</p>
+        </div>
+    </div>
+    <div class="contact" style="background-color: #415165;">    
+        <div class="title2">
+            <p class="cin" style="display: inline-block; color: #FFFFFF; font-size:xx-large;">聯絡方式 </p> <p class="cin" style="display: inline-block; color: #FFFFFF;font-size:x-large;">CONTACT METHOD</p>
+        </div>
+        <hr style="
+        margin-top: -30px;
+        top: 230px;
+        left: 360px;
+        width: 1200px;
+        height: 0px;
+        border: 0.5px solid #FFFFFF;
+        opacity: 1;">
+        <center><p>Mail:xxxd@hexschool.com</p>
+        <p>Phone:0910123456</p>
+        <p>Kaohsiung, Taiwan</p>
+        <p>作品連結:https://www.behance.net/xxxdddddd</p>
+        <img src="facebook@2x.png">
+        <img src="instagram-alt@2x.png">
+        <img src="line@2x.png"></center>
+    </div>
 </body>
